@@ -1,8 +1,8 @@
 import axios from "axios";
 
-export const players_url = "http://localhost:5000/players/";
-export const sessions_url = "http://localhost:5000/sessions/";
-export const likes_url = "http://localhost:5000/likes/61fe4fa2f3b535b40f22ff6c";
+export const players_url = "https://mahjong-sessions.herokuapp.com/players/";
+export const sessions_url = "https://mahjong-sessions.herokuapp.com/sessions/";
+export const likes_url = "https://mahjong-sessions.herokuapp.com/likes/61fe4fa2f3b535b40f22ff6c";
 
 export const fetchSessions = () => axios.get(sessions_url);
 export const createSession = (newSession) => axios.post(sessions_url, newSession);
