@@ -23,7 +23,9 @@ const PlayerList = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {players.slice().map((player) => (
+                    {players.slice()
+                        .sort((a,b) => b.netProfit - a.netProfit)
+                        .map((player) => (
                         <Player key={player._id} player={player}/>
                     ))}
                 </tbody>
